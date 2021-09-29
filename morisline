@@ -1,0 +1,33 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+
+    // simple soultion to solve the isuue by adding alot of print lines
+
+        String [] moriscode = { " *-" , " -***" , " -*-*" , " -**" , " *" , " **-*" ," --*" , " ****" , " **" , " *---" ," -*-" ,
+                " *-**" , " --" , " -*" , " ---" , " *--*" , " --*-" , " *-*" ," ***" , " -" , " **-" , " ***-" ," *--" ," -**-" ,
+                "-*--" ,"--**" ,};
+
+          String[] alphabit = { "a" , "b" , "c" , "d" , "e" , "f" ,"g" , "h" , "i" , "j" ,"k" ,
+                "l" , "m" , "n" , "o" , "p" , "q" , "r" ,"s" , "t" , "u" , "v" ,"w" ,"x" ,
+               "y" ,"z" ,};
+           //  moriscode[0] = alphabit[0] ;
+        System.out.println("enter you letters here here ");
+        String data =scanner.nextLine();
+
+        for(int i =0 ; i<alphabit.length ; i++){
+
+
+           data = data.replace(alphabit[i],moriscode[i]);
+            //data.replace(moriscode[i],alphabit[i] );
+
+        }
+
+           System.out.println(data);
+    }
+}
